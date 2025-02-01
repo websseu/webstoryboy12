@@ -1,5 +1,10 @@
 import { z } from 'zod';
-import { PostInputSchema } from './validator';
+import {
+  PostInputSchema,
+  UserInputSchema,
+  UserSignInSchema,
+  UserSignUpSchema,
+} from './validator';
 
 export type Post = {
   _id: string;
@@ -45,6 +50,13 @@ export type Data = {
 
 export type InputData = {
   posts: IPostInput[];
+  users: IUserInput[];
 };
 
+// 글 목록
 export type IPostInput = z.infer<typeof PostInputSchema>;
+
+// 회원가입 및 로그인
+export type IUserInput = z.infer<typeof UserInputSchema>;
+export type IUserSignIn = z.infer<typeof UserSignInSchema>;
+export type IUserSignUp = z.infer<typeof UserSignUpSchema>;

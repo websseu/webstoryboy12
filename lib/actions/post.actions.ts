@@ -46,6 +46,7 @@ export const getPostsForCategory = async ({
       posts,
       totalPages: Math.ceil(totalPosts / limit),
       currentPage: page,
+      totalPosts,
     };
   } catch (error) {
     console.error('데이터 가져오기 오류:', error);

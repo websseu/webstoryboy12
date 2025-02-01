@@ -1,4 +1,3 @@
-import PageTitle from '@/components/title/page-title';
 import data from '@/lib/data';
 import { notFound } from 'next/navigation';
 
@@ -13,7 +12,7 @@ export default function InspirationPage() {
 
   return (
     <>
-      <PageTitle pagesTitle={pagesTitle} />
+      <div>dd</div>
     </>
   );
 }

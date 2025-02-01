@@ -163,16 +163,22 @@ body {
   .likes {
     @apply bg-red-500 rounded-sm text-xs text-white px-1 flex items-center justify-center;
   }
+  .uline {
+    @apply underline underline-offset-4;
+  }
 
-  .page__container > h2 {
+  .page__title > h2 {
     @apply text-2xl md:text-3xl font-nexon mb-3;
   }
-  .page__container > p {
+  .page__title > p {
     @apply text-black300 font-nanum mb-2 leading-6 text-sm;
   }
 
   .card__container {
     @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-6;
+  }
+  .card__container .card {
+    @apply mb-1;
   }
 
   .post__list {

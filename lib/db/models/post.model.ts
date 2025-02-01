@@ -17,7 +17,7 @@ const postSchema = new Schema<IPost>(
     description: { type: String, trim: true },
     isPublished: { type: Boolean, required: true, default: false },
     author: { type: String, required: true },
-    images: [String],
+    images: { type: String, required: true },
     tags: { type: [String], default: [] },
     numReviews: { type: Number, default: 0 },
     numViews: { type: Number, default: 0 },
